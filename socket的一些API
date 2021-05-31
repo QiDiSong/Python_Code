@@ -1,0 +1,7 @@
+sk.recv(bufsize[,flag]):接受套接字的数据。数据以字符串形式返回，bufsize指定最多可以接收的数量。flag提供有关消息的其他信息，通常可以忽略。
+
+sk.recvfrom(bufsize[.flag]):与recv()类似，但返回值是（data,address）。其中data是包含接收数据的字符串，address是发送数据的套接字地址。
+sk.getsockname():返回套接字自己的地址。通常是一个元组(ipaddr,port)
+sk.connect(address):连接到address处的套接字。一般，address的格式为元组（hostname,port）,如果连接出错，返回socket.error错误。
+
+sk.listen(backlog):开始监听传入连接。backlog指定在拒绝连接之前，可以挂起的最大连接数量。
