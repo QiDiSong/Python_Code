@@ -1,0 +1,4 @@
+.idea
+hello.py
+*.log
+venv/
